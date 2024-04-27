@@ -18,7 +18,7 @@ a = sqrt((x1-x2)**2+(y1-y2)**2)
 b = sqrt((x1-x3)**2+(y1-y3)**2)
 c = sqrt((x2-x3)**2+(y2-y3)**2)
 
-!now we have to chack the nessesary condiction to form a triangle
+!now we have to check the necessary condition to form a triangle
 if ((a+b)>c .and. (b+c)>a .and. (a+c)>b ) THEN
 s = (a+b+c)/2.0
 t_area = sqrt(s*(s-a)*(s-b)*(s-c))
