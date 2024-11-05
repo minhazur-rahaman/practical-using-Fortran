@@ -20,7 +20,7 @@ c = sqrt((x2-x3)**2+(y2-y3)**2)
 !now we have to check the necessary condition to form a triangle
    if ((a+b)>c .and. (b+c)>a .and. (a+c)>b ) THEN
    s = (a+b+c)/2.0
-   area = sqrt(s*(s-a)*(s-b)*(s-b))
+   area = sqrt(s*(s-a)*(s-b)*(s-c))
    perimeter = a+b+c
    print 10, area, perimeter
    10 format("The area of the triangle is: ",f6.2,"perimeter : ",f5.3)
