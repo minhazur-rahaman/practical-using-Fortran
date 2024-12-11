@@ -17,7 +17,7 @@ program electricity_charges
     real, parameter :: demand_charge = 60.0
 
     ! Rates for Industrial customers
-    real, parameter ::  = 150.0, IND_P = 2.0, IND_Q = 3.0, IND_R = 4.0
+    real, parameter :: IND_FIXED = 150.0, IND_P = 2.0, IND_Q = 3.0, IND_R = 4.0
     ! Rates for Bulk Industrial customers
     real, parameter :: BULK_FIXED = 100.0, BULK_U = 1.5, BULK_V = 2.5, BULK_W = 3.5
     ! Rates for Domestic customers
