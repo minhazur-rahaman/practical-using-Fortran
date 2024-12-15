@@ -24,8 +24,8 @@ c = sqrt((x2-x3)**2+(y2-y3)**2)
  t_area = sqrt(s*(s-a)*(s-b)*(s-c))
  perimeter = a+b+c
 
- !radius of inner circle 
- radius = perimeter/(4*t_area)
+ !radius of outer circle 
+ radius = a*b*c/(4*t_area)
  area = pi*radius**2
  circumf = 2*pi*radius
 
@@ -33,7 +33,7 @@ c = sqrt((x2-x3)**2+(y2-y3)**2)
  print 10, area
  10 format("The area of the inner circle is: ",f6.2)
  print 12, circumf
- 12 format("The circumference of the inner circle is: ",f6.3)
+ 12 format("The circumference of the outer circle is: ",f6.3)
  else 
  print*, "Condition is not satisfy so triangle will not form"
  end if 
