@@ -12,7 +12,7 @@ program evaluate_expressions
         read*, a, b, r, d
 
         ! Check for undefined conditions in u calculation
-        if (r == d .or. b == 0) THEN
+        if (sin(r-d) == 0 .or. b == 0) THEN
             print*, "The equation for U is undefined due to b=0 or (r=d)."
             cycle  ! Go to the next iteration if u is undefined
 
